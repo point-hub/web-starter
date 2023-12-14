@@ -32,5 +32,8 @@ WORKDIR /home/node/app
 # copy web files
 COPY --from=builder --chown=node:node /home/node/app/.output /home/node/app
 
+# expose port
+EXPOSE 3000
+
 # run server
 CMD [ "node", "server/index.mjs" ]
