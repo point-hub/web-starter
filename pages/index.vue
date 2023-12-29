@@ -15,11 +15,13 @@ useHead({
 
 <template>
   <div>
-    <component :is="BaseAccordion">
-      <component :is="BaseAccordionItem" :item-id="1" title="Accordion #1" content="Hello World"></component>
-      <component :is="BaseAccordionItem" :item-id="2" title="Accordion #2" content="Hello World"></component>
-      <component :is="BaseAccordionItem" :item-id="3" title="Accordion #3" content="Hello World"></component>
-    </component>
+    <ClientOnly>
+      <component :is="BaseAccordion">
+        <component :is="BaseAccordionItem" :item-id="1" title="Accordion #1" content="Hello World"></component>
+        <component :is="BaseAccordionItem" :item-id="2" title="Accordion #2" content="Hello World"></component>
+        <component :is="BaseAccordionItem" :item-id="3" title="Accordion #3" content="Hello World"></component>
+      </component>
+    </ClientOnly>
     <BaseIcon icon="" />
   </div>
 </template>
