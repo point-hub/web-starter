@@ -12,20 +12,20 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
-    "@point-hub/papp": "^0.0.2",
+    "@point-hub/papp": "^0.0.6",
     "@point-hub/preset-papp-icon": "^0.0.2",
-    "@typescript-eslint/parser": "^6.14.0",
+    "@typescript-eslint/parser": "^6.16.0",
     "@unocss/eslint-config": "^0.58.0",
     "@unocss/nuxt": "^0.58.0",
     "@unocss/reset": "^0.58.0",
     "@unocss/transformer-directives": "^0.58.0",
-    "eslint": "^8.55.0",
+    "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.0.1",
-    "nuxt": "^3.8.2",
+    "eslint-plugin-prettier": "^5.1.2",
+    "nuxt": "^3.9.0",
     "prettier": "^3.1.1",
     "typescript": "^5.3.3",
-    "vue": "^3.3.10",
+    "vue": "^3.4.0",
     "vue-router": "^4.2.5"
   }
 }

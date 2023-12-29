@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { BaseAlert } from '@point-hub/papp'
+import { BaseAccordion, BaseAccordionItem } from '@point-hub/papp'
+
 useHead({
   title: 'Pointhub',
   meta: [
@@ -13,11 +14,12 @@ useHead({
 </script>
 
 <template>
-  <div class="flex-1 flex flex-col justify-center">
-    <component :is="BaseAlert" color="primary" title="Welcome">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti incidunt praesentium quae, quibusdam natus
-      dolorem beatae vero quis eius minima ipsum non voluptatem repellendus deserunt architecto laudantium doloremque
-      rerum eveniet.
+  <div>
+    <component :is="BaseAccordion">
+      <component :is="BaseAccordionItem" :item-id="1" title="Accordion #1" content="Hello World"></component>
+      <component :is="BaseAccordionItem" :item-id="2" title="Accordion #2" content="Hello World"></component>
+      <component :is="BaseAccordionItem" :item-id="3" title="Accordion #3" content="Hello World"></component>
     </component>
+    <BaseIcon icon="" />
   </div>
 </template>
