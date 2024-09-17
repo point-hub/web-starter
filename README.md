@@ -15,12 +15,24 @@ Make sure to install the dependencies:
 bun install --frozen-lock
 ```
 
+To upgrade Nuxt to the latest release, use the nuxi upgrade command.
+
+```bash
+bun x nuxi upgrade
+```
+
 ## Development Server
 
 Start the development server on `http://localhost:3000`:
 
 ```bash
 bun run dev
+```
+
+## Testing
+
+```bash
+npx cypress open
 ```
 
 ## Production
